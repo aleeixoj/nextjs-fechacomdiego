@@ -1,6 +1,4 @@
-import { NumericDictionary } from "lodash"
 import { GetStaticProps } from "next"
-import { useEffect, useState } from "react"
 import { Carousel } from "../../components/Carousel"
 import { Header } from "../../components/Header"
 import { WppButton } from "../../components/WppButton"
