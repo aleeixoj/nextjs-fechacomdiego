@@ -25,7 +25,7 @@ const Passeios = ({ passeios }: IPasseiosProps) => {
     <div className={styles.container}>
       <Header />
       <Carousel data={passeios} />
-      <WppButton className={styles.wpp} />
+      <WppButton />
     </div>
   )
 }
