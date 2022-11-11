@@ -44,7 +44,9 @@ export const getStaticProps: GetStaticProps = async () => {
   }));
   return {
     props: { passeios },
-    revalidate: 60 * 60 * 24,
+    revalidate: 60 * 10,
+    // revalidate: 60 * 60 * 24,
+
   };
 };
 
