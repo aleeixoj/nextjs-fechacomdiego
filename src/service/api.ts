@@ -2,7 +2,7 @@
 import axios, { AxiosError } from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.URL_API,
+  baseURL: process.env.NEXT_PUBLIC_URL_API,
 });
 
 

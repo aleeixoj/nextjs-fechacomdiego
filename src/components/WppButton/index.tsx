@@ -10,13 +10,11 @@ function WppButton({ ...rest }) {
   }
   return (
     <div className={styles.container} {...rest}>
-      <div className={styles.wpp}>
-        <Link href={`${process.env.API_WPP}`}>
-          <a target="_blank" rel="noreferrer">
-            <FaWhatsapp size={"100%"} />
-          </a>
-        </Link>
-      </div>
+
+      <a className={styles.wpp} href={`${process.env.NEXT_PUBLIC_API_WPP}`} target="_blank" rel="noreferrer">
+        <FaWhatsapp size={"100%"} />
+      </a>
+
     </div >
   )
 }
