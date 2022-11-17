@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next"
+import { useEffect, useState } from "react"
 import { Carousel } from "../../components/Carousel"
 import { Header } from "../../components/Header"
 import { WppButton } from "../../components/WppButton"
@@ -21,6 +22,7 @@ export type IPasseiosProps = {
 }
 
 const Passeios = ({ passeios }: IPasseiosProps) => {
+
   return (
     <div className={styles.container}>
       <Header />
@@ -44,7 +46,7 @@ export const getStaticProps: GetStaticProps = async () => {
   }));
   return {
     props: { passeios },
-    revalidate: 60 * 10,
+    revalidate: 60,
     // revalidate: 60 * 60 * 24,
 
   };
